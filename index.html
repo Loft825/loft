@@ -1,89 +1,205 @@
 <!DOCTYPE html>
+
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<div class="hero">
-    <h1>LOFT</h1>
-</div>
-    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>LOFT</title>
+
 <style>
-body{
-    background:#111;
-    color:#f5f5f5;
-    font-family: "Segoe UI", sans-serif;
+
+*{
     margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-.container{
-    max-width:800px;
-    margin:80px auto;
-    padding:40px;
+html{
+    scroll-behavior:smooth;
 }
 
-h1{
-    font-size:48px;
-    margin-bottom:10px;
-    border-bottom:1px solid #444;
-    padding-bottom:15px;
+body{
+    background:#080808;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
-.subtitle{
-    color:#999;
-    letter-spacing:3px;
-    margin-bottom:50px;
+.hero{
+    height:100vh;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    overflow:hidden;
 }
 
-.card{
-    background:#1b1b1b;
-    padding:30px;
-    border-radius:12px;
-    margin-bottom:25px;
-    border:1px solid #333;
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+    linear-gradient(
+    rgba(0,0,0,.65),
+    rgba(0,0,0,.65)
+    ),
+    url("airplane.jpg");
+    background-size:cover;
+    background-position:center;
 }
 
-h2{
-    color:#ddd;
+.hero-content{
+    position:relative;
+    z-index:1;
 }
 
-a{
-    color:#c0c0c0;
+.hero h1{
+    font-size:6rem;
+    letter-spacing:12px;
+    font-weight:200;
+}
+
+.hero p{
+    margin-top:15px;
+    color:#d0d0d0;
+    letter-spacing:2px;
+}
+
+.scroll{
+    margin-top:50px;
+    color:#888;
+}
+
+.section{
+    max-width:1000px;
+    margin:auto;
+    padding:100px 30px;
+}
+
+.section h2{
+    margin-bottom:40px;
+    font-size:2rem;
+    font-weight:300;
+}
+
+.about{
+    line-height:1.8;
+    color:#cfcfcf;
+}
+
+.social{
+    display:grid;
+    gap:20px;
+}
+
+.social a{
     text-decoration:none;
+    color:white;
+    padding:25px;
+    background:#111;
+    border:1px solid #222;
+    border-radius:15px;
+    transition:.3s;
+    display:block;
 }
+
+.social a:hover{
+    transform:translateY(-4px);
+    border-color:#666;
+}
+
+.footer{
+    text-align:center;
+    padding:80px 20px;
+    border-top:1px solid #222;
+}
+
+.footer a{
+    display:inline-block;
+    margin:10px;
+    padding:12px 25px;
+    text-decoration:none;
+    color:white;
+    border:1px solid #444;
+    border-radius:10px;
+}
+
+.footer a:hover{
+    background:#151515;
+}
+
 </style>
+
 </head>
 
 <body>
 
-<div class="container">
+<section class="hero">
+
+<div class="hero-content">
 
 <h1>LOFT</h1>
-<p class="subtitle">PHOTOGRAPHY / AVIATION / PERSONAL PROFILE</p>
 
-<div class="card">
+<p>PHOTOGRAPHY • AVIATION • PORTFOLIO</p>
+
+<div class="scroll">
+▼ Scroll
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
 <h2>About</h2>
-<p>
-高校生。<br>
-飛行機撮影と写真撮影が趣味。
-</p>
+
+<div class="about">
+High school student photographer <br>
+航空機を中心とした写真撮影を行っています。<br>
+風景や都市の記録にも興味があります。
 </div>
 
-<div class="card">
-<h2>Interests</h2>
-<p>
-✈ Aviation<br>
-📷 Photography<br>
-🥋 Judo
-</p>
+</section>
+
+<section class="section">
+
+<h2>Links</h2>
+
+<div class="social">
+
+<a href="https://x.com/type89wolfpack">
+X (Twitter)
+</a>
+
+<a href="https://github.com/">
+GitHub
+</a>
+
+<a href="https://instagram.com/loft.prototype?igsh=d2wyOTBhbmVremRv">
+Instagram(オーナー)
+</a>
+
+<a href="https://instagram.com/raw_volk?igsh=MWZqdnBuYXphbXJqdQ==">
+Instagram(ロウ)
+</a>    
+
 </div>
 
-<div class="card">
-<h2>Contact</h2>
-<p>
-X(Twitter): @type89wolfpack
-</p>
-</div>
+</section>
 
-</div>
+<footer class="footer">
+
+<a href="privacy.html">
+Privacy Policy
+</a>
+
+<a href="cookies.html">
+Cookie Settings
+</a>
+
+</footer>
 
 </body>
 </html>
