@@ -8,16 +8,24 @@
 <title>LOFT</title>
 
 <style>
-    #loading-screen{
+
+#loading-screen{
     position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
+    inset:0;
     background:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
     z-index:9999;
     animation:fadeOut 1.5s ease forwards;
     animation-delay:1s;
+}
+
+#loading-screen h1{
+    color:white;
+    font-size:4rem;
+    letter-spacing:12px;
+    font-weight:200;
 }
 
 @keyframes fadeOut{
@@ -45,12 +53,6 @@ body{
     color:white;
     font-family:Arial, Helvetica, sans-serif;
 }
-
-    <body>
-
-<div id="loading-screen">
-    <h1>LOFT</h1>
-</div>
 
 .hero{
     height:100vh;
@@ -162,6 +164,10 @@ body{
 
 <body>
 
+<div id="loading-screen">
+    <h1>LOFT</h1>
+</div>
+
 <section class="hero">
 
 <div class="hero-content">
@@ -183,7 +189,7 @@ body{
 <h2>About</h2>
 
 <div class="about">
-High school student photographer <br>
+High school student photographer.<br>
 航空機を中心とした写真撮影を行っています。<br>
 風景や都市の記録にも興味があります。
 </div>
@@ -196,21 +202,21 @@ High school student photographer <br>
 
 <div class="social">
 
-<a href="https://x.com/type89wolfpack">
+<a href="https://x.com/type89wolfpack" target="_blank">
 X (Twitter)
 </a>
 
-<a href="https://github.com/">
+<a href="https://github.com/" target="_blank">
 GitHub
 </a>
 
-<a href="https://instagram.com/loft.prototype?igsh=d2wyOTBhbmVremRv">
-Instagram(オーナー)
+<a href="https://instagram.com/loft.prototype?igsh=d2wyOTBhbmVremRv" target="_blank">
+Instagram (Owner)
 </a>
 
-<a href="https://instagram.com/raw_volk?igsh=MWZqdnBuYXphbXJqdQ==">
-Instagram(ロウ)
-</a>    
+<a href="https://instagram.com/raw_volk?igsh=MWZqdnBuYXphbXJqdQ==" target="_blank">
+Instagram (Raw)
+</a>
 
 </div>
 
