@@ -117,25 +117,27 @@ body{
     color:#cfcfcf;
 }
 
-.social{
-    display:grid;
-    gap:20px;
-}
-
-.social a{
-    text-decoration:none;
-    color:white;
-    padding:25px;
-    background:#111;
+.card{
+    background:rgba(17,17,17,0.8);
     border:1px solid #222;
-    border-radius:15px;
-    transition:.3s;
-    display:block;
+    border-radius:12px;
+    padding:20px;
+    margin:15px 0;
 }
 
-.social a:hover{
-    transform:translateY(-4px);
-    border-color:#666;
+.card i{
+    margin-right:10px;
+    width:20px;
+    text-align:center;
+}
+
+.visitor-card{
+    text-align:center;
+}
+
+.visitor-card img{
+    display:block;
+    margin:15px auto;
 }
 
 .footer{
@@ -200,12 +202,16 @@ body{
 
 </section>
 
-<div class="card">
-<h3>👥 Visitors</h3>
-<p>This site has been visited:</p>
+<div class="card visitor-card">
 
-<img src="https://visitor-badge.laobi.icu/badge?page_id=Loft825.loft">
+<h3>👥 Visitors</h3>
+
+<img
+src="https://visitor-badge.laobi.icu/badge?page_id=Loft825.loft"
+alt="Visitors">
+
 </div>
+
 <section class="section">
 
 <h2>Navigation</h2>
